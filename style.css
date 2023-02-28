@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  background-color: lightblue;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+}
+@media (max-width: 576px) {
+  nav {
+    height: 50px;
+  }
+}
+nav .logo {
+  font-size: 40px;
+  color: orangered;
+  font-weight: bold;
+  cursor: pointer;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+nav ul a {
+  text-decoration: none;
+  padding-left: 20px;
+}
+nav ul a:hover {
+  color: yellow;
+}
+@media (max-width: 576px) {
+  nav ul {
+    display: none;
+  }
+}
+nav input {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #f6efef;
+  border: none;
+}
+@media (max-width: 576px) {
+  nav input {
+    display: none;
+  }
+}
+nav .hamburger {
+  display: none;
+}
+@media (max-width: 576px) {
+  nav .hamburger {
+    display: flex;
+  }
+}
+
+.home {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+@media (max-width: 576px) {
+  .home {
+    display: grid;
+  }
+}
+.home .left {
+  width: 50vw;
+  height: auto;
+}
+@media (max-width: 576px) {
+  .home .left {
+    width: 100vw;
+  }
+}
+.home .left img {
+  height: 100%;
+  width: 100%;
+}
+.home .right {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+@media (max-width: 576px) {
+  .home .right {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    text-align: center;
+  }
+}
+
+.about {
+  height: auto;
+  width: auto;
+  padding: 30px;
+}
+.about h2 {
+  text-align: center;
+}
+.about p {
+  text-align: justify;
+}
+
+.services {
+  width: auto;
+  height: auto;
+  padding: 30px;
+}
+.services h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.services .flex {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 576px) {
+  .services .flex {
+    display: grid;
+  }
+}
+.services .flex .card {
+  box-shadow: 5px 5px 5px lightgray;
+  border-radius: 10px;
+  width: 350px;
+  padding: 30px;
+  height: auto;
+}
+
+form {
+  padding: 30px;
+  border-radius: 7px;
+}
+form input {
+  border-radius: 4px;
+  background-color: rgb(232, 232, 232);
+  border: none;
+}
+
+footer {
+  text-align: center;
+  height: 20px;
+  width: auto;
+  font-size: 22px;
+}/*# sourceMappingURL=style.css.map */
